@@ -26,11 +26,28 @@
 <body>
     <!-- Inizio Header -->
     <header>
+
+        <h1 class="text-center display-1 fw-bold text-light my-5">IL GIOCO DEI DADI</h1>
         
     </header>
     <!-- Fine Header -->
     <!-- Inizio Main -->
     <main>
+        <div class="container text-center">
+            <div id="result" class="display-5 card-text fw-bold"></div>
+            <div class="dice-container d-flex justify-content-center align-center gap-5">
+                <div id="dice" class="user-dice_container">
+                    <div id="user-dice"></div>
+                    <h2  id="player1" class="display-5 card-text fw-bold text-center"></h2>
+                </div>
+                <div id="dice" class="cpu-dice_container">
+                    <div id="cpu-dice">
+                    </div>
+                    <h2  id="player2" class="display-5 card-text fw-bold text-center"></h2>
+                </div>
+            </div>
+            <button type="button" id="button" class="btn btn-primary fs-1 fw-bold">PULL</button>
+        </div>
 
     </main>
     <!-- Fine Main -->

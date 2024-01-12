@@ -1,0 +1,18 @@
+body {
+    background-image: url(https://img.freepik.com/premium-photo/poker-table-background_77211-140.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-text {
+    color: #dbe34a;
+    text-shadow: 0px 0px 15px rgb(74 74 74);
+}
+
+#dice {
+    margin: 3rem 5rem;
+}
+
+.bi {
+    font-size: 10rem;
+}
