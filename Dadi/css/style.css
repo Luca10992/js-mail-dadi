@@ -5,7 +5,7 @@ body {
 }
 
 .card-text {
-    color: #dbe34a;
+    color: #bdc44a;
     text-shadow: 0px 0px 15px rgb(74 74 74);
 }
 
@@ -15,4 +15,19 @@ body {
 
 .bi {
     font-size: 10rem;
+    color: red;
+    display: flex;
+}
+
+.bg-dice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #a4aa3b;
+}
+
+.btn {
+    background-color: rgb(61, 71, 255);
+    color:#bdc44a;
+    border-radius: 20px;
 }

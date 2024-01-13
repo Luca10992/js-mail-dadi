@@ -8,6 +8,7 @@ const username1 = prompt("Nome giocatore 1");
 const username2 = prompt("Nome giocatore 2");
 
 
+
 pull.addEventListener('click', function() {
     const userNumber = Math.floor(Math.random() * 6 + 1);
     console.log(userNumber);
@@ -18,87 +19,21 @@ player1.innerHTML = username1;
 player2.innerHTML = username2;
 
     if (userNumber > cpuNumber) {
-        result.innerHTML = (username1 + " vince!");
+        result.innerHTML = ("*" + username1 + " Vince!*");
     } if (userNumber < cpuNumber) {
-        result.innerHTML = (username2 + " vince!");
+        result.innerHTML = ("*" + username2 + " vince!*");
     } else if (userNumber == cpuNumber) {
-        result.innerHTML = ("Pareggio!");
-    }
-    
-    if (userNumber == 1) {
-        userDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-1"></i>
-            </div>
-        ` 
-    } if (userNumber == 2) {
-        userDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-2"></i>
-            </div>
-        ` 
-    } if (userNumber == 3) {
-        userDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-3"></i>
-            </div>
-        ` 
-    } if (userNumber == 4) {
-        userDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-4"></i>
-            </div>
-        ` 
-    } if (userNumber == 5) {
-        userDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-5"></i>
-            </div>
-        ` 
-    } if (userNumber == 6) {
-        userDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-6"></i>
-            </div>
-        ` 
+        result.innerHTML = ("*Pareggio!*");
     }
 
-    if (cpuNumber == 1) {
-        cpuDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-1"></i>
-            </div>
-        ` 
-    } if (cpuNumber == 2) {
-        cpuDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-2"></i>
-            </div>
-        ` 
-    } if (cpuNumber == 3) {
-        cpuDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-3"></i>
-            </div>
-        ` 
-    } if (cpuNumber == 4) {
-        cpuDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-4"></i>
-            </div>
-        ` 
-    } if (cpuNumber == 5) {
-        cpuDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-5"></i>
-            </div>
-        ` 
-    } if (cpuNumber == 6) {
-        cpuDice.innerHTML = `
-            <div>
-                <i class="bi bi-dice-6"></i>
-            </div>
-        ` 
-    }
+    userDice.innerHTML = `
+        <div class="bg-dice">
+            <i class="bi bi-dice-${userNumber}-fill"></i>
+        </div>
+    `
+    cpuDice.innerHTML = `
+        <div class="bg-dice">
+            <i class="bi bi-dice-${cpuNumber}-fill"></i>
+        </div>
+    `
 })
-
